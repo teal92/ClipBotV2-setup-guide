@@ -1,65 +1,190 @@
-# How to Setup ClipBot v2
 
-Once you get signed up and pick your plan in ClipBot, you must download the companion so ClipBot functions properly on your hardware[cite: 1]. ClipBot is a Hybrid SaaS system where it utilizes cloud services and the end user's hardware[cite: 1]. Once you land on the ClipBot dash, you can download the companion by pressing the **Start ClipBot** button at the top right or the **Companion setup / update** button in the streamers tab[cite: 1].
+# ClipBot V2 — Setup Guide
+
+Welcome to ClipBot V2! This guide will walk you through installing the ClipBot Companion, connecting your accounts, configuring your streams, and getting started with Davey AI.
+
+## 1. Download and Install ClipBot Companion
+
+ClipBot V2 is a hybrid SaaS platform that combines cloud services with processing on your own computer.
+
+After signing up and selecting your plan, you'll need to install the **ClipBot Companion** to enable local processing.
+
+From your ClipBot dashboard, click either:
+
+- **Start ClipBot** in the upper-right corner.
+- **Companion Setup / Update** in the Streamers tab.
 
 ![Streamers Dashboard](image1.png)
 
-After pressing one of those buttons, a popup will appear for you to download the companion[cite: 1]. Click **Download** and follow the instructions[cite: 1].
+A window will appear prompting you to download the Companion. Click **Download**, then run the installer and follow the on-screen instructions.
 
-![Update Companion Popup](image2.png)
-![Installer Preparing to Install](image3.png)
+![Companion Download Window](image2.png)
 
-If this error appears (it will not on initial setup, most likely on updates), open your Task Manager and end this task, then click **Try again**[cite: 1]:
+![Companion Installer](image3.png)
+
+### Troubleshooting Installation Errors
+
+If you encounter an installation error while updating ClipBot Companion:
+
+1. Open **Windows Task Manager**.
+2. Locate the running ClipBot Companion process shown below.
+3. Select **End Task**.
+4. Return to the installer and click **Try Again**.
+
+This issue is more likely to occur during updates than initial installation.
 
 ![Installation Error](image4.png)
+
 ![Task Manager Process](image5.png)
 
-Upon finishing, you might see a webpage like this pop up in your browser; **do not close it**[cite: 1]. This is the companion app pairing prompt[cite: 1]. Go back to ClipBot and close the downloader to get the pairing code[cite: 1].
+## 2. Pair Your Computer With ClipBot
 
-![ClipBot Local Worker Pairing Page](image6.png)
-![Update Companion Cancel](image7.png)
+After installation, your browser may automatically open the ClipBot Companion pairing page.
 
-Copy and paste this pairing code into the companion tab and click **Pair this computer**[cite: 1]. You get it from the **Connect Accounts** tab in the Local Worker baseball card[cite: 1]. Click **Generate Pairing Code** and copy the code underneath it[cite: 1].
+**Keep this page open until pairing is complete.**
+
+![Companion Pairing Page](image6.png)
+
+Return to your ClipBot dashboard and close the Companion download window.
+
+![Companion Download Window](image7.png)
+
+To generate your pairing code:
+
+1. Open the **Connect Accounts** tab.
+2. Find the **Local Worker** card.
+3. Click **Generate Pairing Code**.
+4. Copy the generated code.
 
 ![Connect Accounts Tab](image8.png)
+
+Return to the Companion pairing page, paste your code, and click **Pair This Computer**.
+
+Once pairing succeeds, ClipBot will indicate that your local worker is connected.
+
 ![Local Worker Paired](image9.png)
 
-After pairing, you can close that tab[cite: 1]. Check your system tray to make sure you see the companion in the background[cite: 1]. As long as it is in the system tray, ClipBot is active and you can utilize it[cite: 1].
+### Verify That Companion Is Running
 
-![System Tray Arrow](image10.png)
-![Companion in System Tray](image11.png)
+After pairing, you can close the browser pairing page.
 
----
+Check your Windows system tray by clicking the arrow near the clock.
 
-## Configuring Accounts and Streaming
+![Windows System Tray](image10.png)
 
-Next, go back to ClipBot and enable Davey and configure your streamers tab and clip triggers to your desired settings[cite: 1]. And connect your social accounts and stream accounts[cite: 1]. For each social/stream service, select the type of account you have when the popup appears and it will direct you to that website to acknowledge and authorize ClipBot’s services[cite: 1].
+Look for the ClipBot Companion icon.
+
+![ClipBot Companion Running](image11.png)
+
+The Companion should remain running in the background while you use ClipBot's local processing features.
+
+## 3. Connect Your Accounts
+
+Return to ClipBot and open **Connect Accounts**.
+
+Here, you can connect your streaming platforms and social media accounts.
 
 ![Connect Accounts Overview](image12.png)
-![Connect Kick Account Type Popup](image13.png)
 
-For Twitch and Kick, if you have a dev account, make sure you have **Read channel and user info** on[cite: 1]. Regular accounts should be fine[cite: 1]. After auth, it redirects back to ClipBot and is color coded (yellow didn't work, green worked)[cite: 1].
+Select the platform you'd like to connect and follow the on-screen instructions.
 
-![Kick Allow Access Prompt](image14.png)
+Some platforms may ask you to select your account type.
 
-Start monitoring[cite: 1]. Streams are displayed in the **Scouting** tab[cite: 1].
+![Kick Account Type Selection](image13.png)
 
-![Scouting Tab Streams](image15.png)
+You'll be redirected to the platform's official authorization page.
 
----
+Review the requested permissions and approve access to connect your account to ClipBot.
 
-## Logs and Debugging
+![Kick Authorization Screen](image14.png)
 
-This site is still in the beta phase[cite: 1]. I need data from everyone to fine-tune Davey and make the pipeline smoother[cite: 1]. Bear with the kinks, utilize the reports and feedback button[cite: 1]. Every time you start a session and end it, the **Logs** tab generates a detailed, bundled report at the bottom of the page[cite: 1]. That is important if you ever run into bugs or issues[cite: 1].
+### Twitch and Kick Permissions
 
-![Logs Session Debugging Bundles](image16.png)
+Regular Twitch and Kick accounts can connect to ClipBot. Developer accounts are not required for normal users.
 
-Downloading these bundles and getting them to me helps me diagnose your issues[cite: 1]. This is what I am talking about if I ever ask you to send me your session logs bundle with the occurring issues[cite: 1]. You have to press **Stop ClipBot** to end a session and generate this log[cite: 1].
+If you use a developer account and ClipBot specifically prompts you to configure additional permissions, follow the instructions provided.
 
----
+ClipBot requests the necessary account permissions during authorization.
 
-## Teaching Davey
+After connecting, return to ClipBot and verify the connection status. A green status indicates a successful connection.
 
-As you sort through clips, approve and reject clips and give ample justification as to why and teach Davey[cite: 1]. Doing this helps him learn how **YOU** clip so he can get better at sourcing them for you[cite: 1]. Davey has 3 phases for you to unlock before he can automatically post for you[cite: 1]. That way he posts what you want and it's not bad clips[cite: 1]. There is more information in the Davey tab on how to configure him to your liking[cite: 1]. As I gather data from the beta, I will add more to his configuration[cite: 1].
+If an account does not connect successfully, retry the authorization process.
+
+## 4. Configure Streaming and Clip Detection
+
+Before monitoring your streams:
+
+1. Open the **Streamers** tab and configure your streaming accounts.
+2. Set your preferred clip triggers and detection settings.
+3. Enable and configure **Davey AI** according to your preferences.
+
+Once configured, click **Start ClipBot** to begin monitoring.
+
+Active streams and monitoring activity can be viewed in the **Scouting** tab.
+
+![Scouting Dashboard](image15.png)
+
+## 5. Logs and Troubleshooting
+
+ClipBot V2 is currently in beta. Your bug reports and feedback help us improve reliability, troubleshoot issues, and refine Davey's performance.
+
+The **Logs** tab contains diagnostic information about your ClipBot sessions.
+
+When you end a session using **Stop ClipBot**, ClipBot generates a bundled diagnostic report that can be downloaded from the Logs page.
+
+![Session Log Bundles](image16.png)
+
+### Reporting an Issue
+
+If ClipBot encounters an error:
+
+1. Note what you were doing when the issue occurred.
+2. Click **Stop ClipBot** to end the session and generate the diagnostic bundle.
+3. Open the **Logs** tab and download the session bundle.
+4. Submit a bug report or contact support with a description of the issue and the relevant logs.
+
+These reports help us identify problems with recording, transcription, clip processing, and other background services.
+
+**Before sharing diagnostic logs, review them for sensitive information such as account details, access tokens, or personal data.**
+
+## 6. Teaching Davey AI
+
+Davey is ClipBot's AI clipping assistant.
+
+As you review generated clips, you can help Davey learn your preferences by providing feedback.
+
+When reviewing clips:
+
+- **Approve** clips you want to keep.
+- **Reject** clips that don't meet your expectations.
+- **Explain why** you approved or rejected a clip whenever possible.
+
+The more useful feedback you provide, the better Davey can adapt future recommendations to your preferred clipping style.
 
 ![Davey Review Interface](image17.png)
+
+### Davey's Three Learning Modes
+
+Davey is designed around three levels of assistance:
+
+**Learning Mode**
+
+Davey recommends clips and learns from your feedback while you remain in control of approvals.
+
+**Assisted Mode**
+
+Davey handles more of the clipping workflow but still requires your approval before publishing.
+
+**Autonomous Mode**
+
+Once enabled and configured, Davey can publish content automatically within your approved settings and limits.
+
+Visit the **Davey** tab in ClipBot for additional configuration options and information about progressing between modes.
+
+## You're Ready to Use ClipBot!
+
+Once you've installed and paired the Companion, connected your accounts, configured your stream settings, and enabled Davey, you're ready to start monitoring and creating clips.
+
+ClipBot V2 is actively being improved during beta. Please continue submitting feedback and diagnostic reports when issues occur.
+
+Thank you for helping us improve ClipBot!
