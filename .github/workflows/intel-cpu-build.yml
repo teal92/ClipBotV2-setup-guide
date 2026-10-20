@@ -1,0 +1,50 @@
+name: Third-party Intel CPU dependency
+on:
+  workflow_dispatch:
+    inputs:
+      commit:
+        description: Exact reviewed public build-recipe commit
+        type: string
+        required: true
+permissions:
+  contents: read
+concurrency:
+  group: third-party-intel-cpu
+  cancel-in-progress: false
+jobs:
+  compile:
+    runs-on: macos-15-intel
+    timeout-minutes: 80
+    env:
+      REVIEWED_COMMIT: ${{ inputs.commit }}
+      PYTHONNOUSERSITE: '1'
+      PIP_DISABLE_PIP_VERSION_CHECK: '1'
+    steps:
+      - name: Require immutable reviewed source
+        run: python3 -c 'import os,re; assert re.fullmatch("[a-f0-9]{40}",os.environ["REVIEWED_COMMIT"])'
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+        with:
+          ref: ${{ inputs.commit }}
+          persist-credentials: false
+      - name: Build isolated source-verified Python runtime
+        run: python3 tools/build_native_runtime.py --target macos-x86_64 --output "$RUNNER_TEMP/native-runtime"
+      - name: Install exact hash-locked build dependencies
+        run: '"$RUNNER_TEMP/native-runtime/runtime/bin/python3.12" tools/install_native_wheels.py --target macos-x86_64 --output "$RUNNER_TEMP/native-wheels"'
+      - name: Run source and timeout regression checks
+        run: '"$RUNNER_TEMP/native-wheels/environment/bin/python" -m pytest tests -q'
+      - name: Compile upstream CPU dependency and exercise VAD models
+        run: '"$RUNNER_TEMP/native-wheels/environment/bin/python" tools/build_native_onnx.py --output "$RUNNER_TEMP/native-onnx"'
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: third-party-intel-cpu-${{ inputs.commit }}
+          retention-days: 1
+          if-no-files-found: warn
+          path: |
+            ${{ runner.temp }}/native-onnx/onnx-diagnostics.json
+            ${{ runner.temp }}/native-onnx/onnx-sources.zip
+            ${{ runner.temp }}/native-onnx/offline-build.patch
+            ${{ runner.temp }}/native-onnx/build.log
+            ${{ runner.temp }}/native-onnx/wheels/*.whl
+            ${{ runner.temp }}/native-runtime/runtime-diagnostics.json
+            ${{ runner.temp }}/native-wheels/wheel-diagnostics.json

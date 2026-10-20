@@ -1,0 +1,130 @@
+{
+  "purpose": "Third-party Intel CPU dependency build only",
+  "publicApproval": false,
+  "files": [
+    {
+      "path": "tools/build_native_runtime.py",
+      "sizeBytes": 11687,
+      "sha256": "ed8b086cceefa10e9dffd97cad4af291cd9092c2fcda5101ea59199c3c7f0830"
+    },
+    {
+      "path": "tools/build_native_onnx.py",
+      "sizeBytes": 11696,
+      "sha256": "751e0fc08f9f959c3acf7175bf682179b0ab3f46f7a48944fd2547065e823077"
+    },
+    {
+      "path": "tools/native_onnx_inputs.py",
+      "sizeBytes": 7979,
+      "sha256": "5a26842accb923e9fa84e2f794bce1103350030d5bad817d3b55e5e8f43f6854"
+    },
+    {
+      "path": "tools/native_onnx_sources.py",
+      "sizeBytes": 2412,
+      "sha256": "b7f6abd7e597ecba3e1550834da02cdf14351406298b066e10b7714dbbc0bc6f"
+    },
+    {
+      "path": "tools/native_dependency_snapshot.py",
+      "sizeBytes": 10661,
+      "sha256": "7a3140ca0577bb4dec1c6223e45f69d9ee7b23084d7e5310b436039a957f6c38"
+    },
+    {
+      "path": "tools/verify_native_release_inputs.py",
+      "sizeBytes": 12770,
+      "sha256": "656c11474e80a064499356e4a0b0f3dcf1dafad57090a2569c6d81a879318c40"
+    },
+    {
+      "path": "tools/verify_release_inputs.py",
+      "sizeBytes": 10270,
+      "sha256": "4bc64eb3ce0e75a99526360d0fde5c06f4f662bf2324e2b73006faf9f5db343a"
+    },
+    {
+      "path": "tools/install_native_wheels.py",
+      "sizeBytes": 7978,
+      "sha256": "d9b3f44f174f914cb052fc3fb0172474b217a1fd0a3f5b7c8ed9857d795f988e"
+    },
+    {
+      "path": "tools/dependency_policy.py",
+      "sizeBytes": 1708,
+      "sha256": "f966fe421a21abe880bca6a8be091b1f716ff7bd22effe96306900df79014f38"
+    },
+    {
+      "path": "worker/__init__.py",
+      "sizeBytes": 63,
+      "sha256": "5277a8c97172ecf844d028355f795eb8e3f25d3ab61f0992af8678a83cf9146e"
+    },
+    {
+      "path": "worker/platforms/__init__.py",
+      "sizeBytes": 358,
+      "sha256": "9929d35c8b281b761683db705f5e41bf9750ae9d0d70bc480ed2362d6f87defa"
+    },
+    {
+      "path": "worker/platforms/identity.py",
+      "sizeBytes": 774,
+      "sha256": "e71536f1339bfe887601bcff10541f0061e802bc8ca43cf7b9cc63f4dae5d0dd"
+    },
+    {
+      "path": "packaging/approved-worker-build.json",
+      "sizeBytes": 1638,
+      "sha256": "f4b61b06ae90b6d118672e6651d01e685687cc158cdc07bf50dcd16edd695722"
+    },
+    {
+      "path": "packaging/platforms/desktop-package-versions.json",
+      "sizeBytes": 443,
+      "sha256": "657d8d7589b60e18e2410d1aa936ff0f800de9dee1d86e02a85d80110738d2d3"
+    },
+    {
+      "path": "packaging/platforms/runtime-sources.json",
+      "sizeBytes": 730,
+      "sha256": "e2e2539ff7f9149b18a3d2c25950149e7fd8b3ce2afe10f076d8a8bd3ec1975f"
+    },
+    {
+      "path": "packaging/platforms/onnxruntime-intel-sources.json",
+      "sizeBytes": 8240,
+      "sha256": "0ee5d28fa08eff0e681271182f7f011ca3647d8b327b5bdf5bbf615db4856130"
+    },
+    {
+      "path": "packaging/platforms/macos-x86_64.dependencies.json",
+      "sizeBytes": 59537,
+      "sha256": "9aed8e7b442f10aeb20514f09497db62bfbec62ad32844d0e9ee9f2652797516"
+    },
+    {
+      "path": "packaging/native/onnxruntime/deps.txt",
+      "sizeBytes": 8219,
+      "sha256": "ff3ae70274f3f4e1c8dec41acde16fffa2b904965e390795f771100b20646c2c"
+    },
+    {
+      "path": "tests/test_native_onnx_build.py",
+      "sizeBytes": 3379,
+      "sha256": "427be90f6429e37f460713abf571100583be934e7b667c7aacdf2b55b3e3f507"
+    },
+    {
+      "path": "tests/test_native_onnx_inputs.py",
+      "sizeBytes": 1966,
+      "sha256": "aeeee7e8d7d8fed0aeef084f17b5609f522bbe2a2da3495c79f0eb6b91e80b75"
+    },
+    {
+      "path": "tests/test_native_onnx_sources.py",
+      "sizeBytes": 1784,
+      "sha256": "6ad5c91085260bb2e431cded2a5cc71f645db68326aaca11c258ac036cacb062"
+    },
+    {
+      "path": "tests/test_native_onnx_timeout.py",
+      "sizeBytes": 697,
+      "sha256": "4df59622bba62d3898928e9a709912e3414bf40914d9ad3e517de934d9b67cea"
+    },
+    {
+      "path": "REVIEW-BEFORE-PUBLISHING.md",
+      "sizeBytes": 2312,
+      "sha256": "edda1a5d9c85d8cd93a49729cce87a84345d9a0ff46e86c3de06fe895c8b1d71"
+    },
+    {
+      "path": ".github/workflows/intel-cpu-build.yml",
+      "sizeBytes": 2234,
+      "sha256": "3046808ea803af7649c477dd137aab2d4abbb7a2d56e60f925e6ee3f4f5e26b5"
+    }
+  ],
+  "baseCommit": "1f12b627eed69fedbaeee044aac1d00a0c7d83b4",
+  "differencesFromBase": {
+    "tools/build_native_onnx.py": "Only compiler timeout increased from1800 to3600 seconds; file digest below covers exact public candidate."
+  }
+}

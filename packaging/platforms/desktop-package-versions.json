@@ -1,0 +1,20 @@
+{
+  "macos": {
+    "pyobjc-core": "12.2.2",
+    "pyobjc-framework-Cocoa": "12.2.2",
+    "pyobjc-framework-Quartz": "12.2.2",
+    "macholib": "1.16.4",
+    "delocate": "0.13.0"
+  },
+  "linux": {
+    "python-xlib": "0.33",
+    "PyGObject": "3.58.1",
+    "pycairo": "1.29.2",
+    "auditwheel": "6.8.2",
+    "pyelftools": "0.33",
+    "meson-python": "0.22.1",
+    "meson": "1.12.1",
+    "ninja": "1.13.2",
+    "pyproject-metadata": "0.12.1"
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "sourceCommit": "402979ac1bef89dcd55add41eaa7277c407599eb",
+  "dependencyManifestSha256": "ff3ae70274f3f4e1c8dec41acde16fffa2b904965e390795f771100b20646c2c",
+  "dependencies": [
+    {
+      "name": "abseil_cpp",
+      "url": "https://github.com/abseil/abseil-cpp/archive/refs/tags/20250814.0.zip",
+      "upstreamSha1": "a9eb1d648cbca4d4d788737e971a6a7a63726b07",
+      "filename": "abseil_cpp.zip",
+      "sha256": "b2bdcf6682d8cb53df365bcc5d6c318a22e55821d9978a10fdb61404c026daff",
+      "sizeBytes": 3194036,
+      "verified": true
+    },
+    {
+      "name": "cxxopts",
+      "url": "https://github.com/jarro2783/cxxopts/archive/3c73d91c0b04e2b59462f0a741be8c07024c1bc0.zip",
+      "upstreamSha1": "6c6ca7f8480b26c8d00476e0e24b7184717fe4f0",
+      "filename": "cxxopts.zip",
+      "sha256": "57b5f012372d4c0e0a975b2e534e9af647cd20530fc72f73a75a61e05e0f997e",
+      "sizeBytes": 98330,
+      "verified": true
+    },
+    {
+      "name": "date",
+      "url": "https://github.com/HowardHinnant/date/archive/refs/tags/v3.0.1.zip",
+      "upstreamSha1": "2dac0c81dc54ebdd8f8d073a75c053b04b56e159",
+      "filename": "date.zip",
+      "sha256": "f4300b96f7a304d4ef9bf6e0fa3ded72159f7f2d0f605bdde3e030a0dba7cf9f",
+      "sizeBytes": 941286,
+      "verified": true
+    },
+    {
+      "name": "dlpack",
+      "url": "https://github.com/dmlc/dlpack/archive/5c210da409e7f1e51ddf445134a4376fdbd70d7d.zip",
+      "upstreamSha1": "e499c86e4e5c5268a87661d7ea39c27fae10907c",
+      "filename": "dlpack.zip",
+      "sha256": "14e8b3f03ab7461f56b3fa7ffd4acfb6e6a65f895dc4b50548cab259229afcbd",
+      "sizeBytes": 228363,
+      "verified": true
+    },
+    {
+      "name": "eigen",
+      "url": "https://github.com/eigen-mirror/eigen/archive/1d8b82b0740839c0de7f1242a3585e3390ff5f33/eigen-1d8b82b0740839c0de7f1242a3585e3390ff5f33.zip",
+      "upstreamSha1": "05b19b49e6fbb91246be711d801160528c135e34",
+      "filename": "eigen.zip",
+      "sha256": "6a60d76351f97132669daeeb721d6bf14b008101883ad2d687a3201c5c461eb0",
+      "sizeBytes": 4075744,
+      "verified": true
+    },
+    {
+      "name": "flatbuffers",
+      "url": "https://github.com/google/flatbuffers/archive/refs/tags/v23.5.26.zip",
+      "upstreamSha1": "59422c3b5e573dd192fead2834d25951f1c1670c",
+      "filename": "flatbuffers.zip",
+      "sha256": "57bd580c0772fd1a726c34ab8bf05325293bc5f9c165060a898afa1feeeb95e1",
+      "sizeBytes": 3209602,
+      "verified": true
+    },
+    {
+      "name": "fp16",
+      "url": "https://github.com/Maratyszcza/FP16/archive/0a92994d729ff76a58f692d3028ca1b64b145d91.zip",
+      "upstreamSha1": "b985f6985a05a1c03ff1bb71190f66d8f98a1494",
+      "filename": "fp16.zip",
+      "sha256": "e66e65515fa09927b348d3d584c68be4215cfe664100d01c9dbc7655a5716d70",
+      "sizeBytes": 91373,
+      "verified": true
+    },
+    {
+      "name": "fxdiv",
+      "url": "https://github.com/Maratyszcza/FXdiv/archive/63058eff77e11aa15bf531df5dd34395ec3017c8.zip",
+      "upstreamSha1": "a5658f4036402dbca7cebee32be57fb8149811e1",
+      "filename": "fxdiv.zip",
+      "sha256": "3d7b0e9c4c658a84376a1086126be02f9b7f753caa95e009d9ac38d11da444db",
+      "sizeBytes": 16646,
+      "verified": true
+    },
+    {
+      "name": "json",
+      "url": "https://github.com/nlohmann/json/archive/refs/tags/v3.11.3.zip",
+      "upstreamSha1": "5e88795165cc8590138d1f47ce94ee567b85b4d6",
+      "filename": "json.zip",
+      "sha256": "04022b05d806eb5ff73023c280b68697d12b93e1b7267a0b22a1a39ec7578069",
+      "sizeBytes": 8489998,
+      "verified": true
+    },
+    {
+      "name": "microsoft_gsl",
+      "url": "https://github.com/microsoft/GSL/archive/refs/tags/v4.2.1.zip",
+      "upstreamSha1": "1094e3bb7a8af763dcb136ccd676e6e75e614eec",
+      "filename": "microsoft_gsl.zip",
+      "sha256": "c9291d95f5f6e5c561990d06a589b01d89e553d0f366f0ce723dd1788e7a6076",
+      "sizeBytes": 84222,
+      "verified": true
+    },
+    {
+      "name": "mimalloc",
+      "url": "https://github.com/microsoft/mimalloc/archive/refs/tags/v2.1.1.zip",
+      "upstreamSha1": "d5ee7d34223d0567892db5179849939c8769dc41",
+      "filename": "mimalloc.zip",
+      "sha256": "23b1bffb2eff57b1e3cb8edc9410d448db2bb43400206a151e107dcabcad773a",
+      "sizeBytes": 1301043,
+      "verified": true
+    },
+    {
+      "name": "mp11",
+      "url": "https://github.com/boostorg/mp11/archive/refs/tags/boost-1.82.0.zip",
+      "upstreamSha1": "9bc9e01dffb64d9e0773b2e44d2f22c51aace063",
+      "filename": "mp11.zip",
+      "sha256": "81431bdc44c439a324e02c07ed067f8f556419fd86f2d8b486ff568df6aac899",
+      "sizeBytes": 232716,
+      "verified": true
+    },
+    {
+      "name": "onnx",
+      "url": "https://github.com/onnx/onnx/archive/refs/tags/v1.22.0.zip",
+      "upstreamSha1": "2b2cd58ac7a26df5371266149e0c76776330cdf1",
+      "filename": "onnx.zip",
+      "sha256": "8dc1181d33529a1249e031226126d0699ac9bdfc571ee530ee3a12f4656f2be3",
+      "sizeBytes": 18911779,
+      "verified": true
+    },
+    {
+      "name": "protobuf",
+      "url": "https://github.com/protocolbuffers/protobuf/releases/download/v33.6/protobuf-33.6.tar.gz",
+      "upstreamSha1": "051fee744fcca04dab37eb009d49aa3e9546acda",
+      "filename": "protobuf.tar.gz",
+      "sha256": "16498d7dc7967e9b100632138babd4b86b61592beeccdd556f67539d9c231355",
+      "sizeBytes": 6888932,
+      "verified": true
+    },
+    {
+      "name": "protoc_mac_universal",
+      "url": "https://github.com/protocolbuffers/protobuf/releases/download/v33.6/protoc-33.6-osx-universal_binary.zip",
+      "upstreamSha1": "3c2f883c5f828ae184550763ab8ae9dc642d5d97",
+      "filename": "protoc_mac_universal.zip",
+      "sha256": "988cbd03f38013ee833c6a12544a965739345924735d45fc2f0ba96c5973fce6",
+      "sizeBytes": 5138242,
+      "verified": true
+    },
+    {
+      "name": "psimd",
+      "url": "https://github.com/Maratyszcza/psimd/archive/072586a71b55b7f8c584153d223e95687148a900.zip",
+      "upstreamSha1": "1f5454b01f06f9656b77e4a5e2e31d7422487013",
+      "filename": "psimd.zip",
+      "sha256": "dc615342bcbe51ca885323e51b68b90ed9bb9fa7df0f4419dbfa0297d5e837b7",
+      "sizeBytes": 8327,
+      "verified": true
+    },
+    {
+      "name": "pthreadpool",
+      "url": "https://github.com/google/pthreadpool/archive/dcc9f28589066af0dbd4555579281230abbf74dd.zip",
+      "upstreamSha1": "533a77943203ef15ca608bcd9dbe2c94da7451d2",
+      "filename": "pthreadpool.zip",
+      "sha256": "b193fcb18abf0d5bdb989968ccd8e274ae0ce8d89b0f1a61763582fb716b259c",
+      "sizeBytes": 104991,
+      "verified": true
+    },
+    {
+      "name": "pybind11",
+      "url": "https://github.com/pybind/pybind11/archive/refs/tags/v3.0.2.zip",
+      "upstreamSha1": "a064e663b4d7a337ac291d1bef7337ef4e60a1ae",
+      "filename": "pybind11.zip",
+      "sha256": "e3754d16ea536bdc968ce1464fa822e198a1217881d31bd9bf3d287fed2bbf4c",
+      "sizeBytes": 1112516,
+      "verified": true
+    },
+    {
+      "name": "pytorch_cpuinfo",
+      "url": "https://github.com/pytorch/cpuinfo/archive/66ee79c038d70dad9f08705b2c9b3e58f6d8f512.zip",
+      "upstreamSha1": "6e2be17c110e4f4184b059303c722b3c5bd080a6",
+      "filename": "pytorch_cpuinfo.zip",
+      "sha256": "b93044263ee072e9be3577bda52f48d5a4dd9fcb80091529471c8d2bfe59219d",
+      "sizeBytes": 3857141,
+      "verified": true
+    },
+    {
+      "name": "re2",
+      "url": "https://github.com/google/re2/archive/refs/tags/2024-07-02.zip",
+      "upstreamSha1": "646e1728269cde7fcef990bf4a8e87b047882e88",
+      "filename": "re2.zip",
+      "sha256": "a835fe55fbdcd8e80f38584ab22d0840662c67f2feb36bd679402da9641dc71e",
+      "sizeBytes": 451539,
+      "verified": true
+    },
+    {
+      "name": "safeint",
+      "url": "https://github.com/dcleblanc/SafeInt/archive/refs/tags/3.0.28.zip",
+      "upstreamSha1": "23f252040ff6cb9f1fd18575b32fa8fb5928daac",
+      "filename": "safeint.zip",
+      "sha256": "3ffbd9a2fdff45da77da3e7269e9aa512ea43bed5c38ce8fd8f3d1068a032c3f",
+      "sizeBytes": 626378,
+      "verified": true
+    }
+  ],
+  "publicReleaseApproved": false,
+  "target": "macos-x86_64",
+  "version": "1.31.0",
+  "nativeBuildAccepted": false
+}
